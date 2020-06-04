@@ -4,24 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" href="./assets/geneFavicon.jpg" rel="icon">
-    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Lato&family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lato&family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/52404d4a70.js" crossorigin="anonymous"></script>
     <title>Gene Maker</title>
     <link rel="stylesheet" href="./styles/styles.css" type="text/css">
 </head>
 <body>
-    <h1>Promoter Hunter</h1>
-    <header>
-
+    <header id="header">
+        <div class="headerContainer wrapper">
+            <div>
+                <h1> <i class=" search fas fa-search"></i> Promoter Hunter</h1>
+            </div>
+            <div class=iconContainer>
+                <i class=" icon fas fa-dna"></i>
+            </div>
+        </div>
     </header>
-    <main>
-
+    <main id="main">
+        <div class="mainContainer wrapper">
+            <div class="mainTop">
+                <h2>- What is a Gene? -</h2>
+                <p>A gene is a sequence of nucleotides in your genome which encodes a gene product. Nucleotides consisting in DNA are A, C, G, and T. These are the building blocks of life and make up who you are!</p>
+                <button>Create your Gene!</button>
+            </div>
+            <div class="mainBot">
+                <p>"ACGATCGAATCGATATTACGATG"</p>
+            </div>
+        </div>
+        
     </main>
     <aside>
-
+        <div class="asideContainer wrapper">
+            <div class="asideTop">
+                <h2> - Complementary Sequence - </h2>
+                <p>Your gene sequences naturally run anti-parallel to one another. For every nucleotide base in your DNA, it is attached to an opposite pair. The opposite pairs flow the other way. </p>
+                <button>Reverse your Gene!</button>
+            </div>
+            <div class="asideBot">
+                <p>"ACGATCGAATCGATATTACGATG"</p>
+            </div>
+        </div>
     </aside>
     <footer>
-        
+        <div class="footerContainer wrapper">
+            <div class="footerLeft">
+                <h2> - Motifs - </h2>
+                <p>Motifs are short recurring patterns in DNA which have biological functions. When DNA gets copied, there are specified sites machinery binds to. </p>
+                <p>Lets see if there are any in your personal Gene!</p>
+            </div>
+            <div class="footerRight">
+                <h3> 1. "TATA" Boxes</h3>
+                <h3>2. "CGCGCG" Islands</h3>
+                <h3>3. "TAACGCG" Combination</h3>
+                <button>Search for the Motifs in your Sequence</button>
+            </div>
+        </div>
+        <div class="wrapper">
+            <p>In your Gene, the motifs were found at: [24, 67, 80]</p>
+        </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
     <script src="./javascript/script.js"></script>

@@ -1,0 +1,29 @@
+.asideContainer{
+    display:flex;
+    flex-direction: column;
+    margin-top:3%;
+}
+
+.asideTop{
+    background-color: #161B33;
+    padding:50px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    h3{
+        margin:0 0 25px 0;
+    }
+    p{
+        line-height: 40px;
+    }
+    button{
+       margin-top:15px;
+    }
+}
+
+.asideBot{
+    background-color: slateblue;
+    padding:20px;
+    margin-left:10px;
+    border-radius: 50px;
+    text-align: center;
+}

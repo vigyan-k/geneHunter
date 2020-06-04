@@ -1,0 +1,22 @@
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: solid 5px slateblue;
+    div{
+        margin:5% 0;
+    }
+}
+
+.headerContainer div:first-child,
+.iconContainer{
+    display:flex;
+    align-items: center;
+}
+
+.headerContainer div:first-child{
+    padding: 0 10px;
+}
+
+.search{
+    rotate: 45deg;
+}

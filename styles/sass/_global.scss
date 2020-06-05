@@ -2,7 +2,7 @@ html {
     font-family: "open sans", "lato", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0D0C1D
+    background-color: #0D0C1D;
 }
 
 .wrapper {
@@ -46,8 +46,9 @@ p{
 
 .icon{
     font-size: 8rem;
-    color: #FCA311;
-    text-shadow: 5px 5px aqua;
+    // color: #FCA311;
+    // text-shadow: 5px 5px aqua;
+    color: #FAC311;
 }
 
 button{
@@ -55,18 +56,34 @@ button{
     color:white;
     padding: 15px 15px;
     border-radius:20px;
-    background-color: #FCA311;
+    background-color: slateblue;
     font-size:1.5rem;
     transition: ease 400ms;
 }
 
 button:hover,
 button:focus{
-    border: 2px solid aqua;
+    border: 2px solid slateblue;
     background-color:#FBFAF9;
     color: #FCA311;
 }
 
 button:focus{
-    border: 2px dashed aqua;
+    border: 2px dashed slateblue;
+}
+
+.reset i{
+    transition: ease 400ms;
+}
+
+.reset:hover i,
+.reset:focus i{
+    rotate: 180deg;
+}
+
+.mainBot,
+.asideBot,
+.motifsFound{
+    line-height: 40px;
+    transition: ease 500ms;
 }

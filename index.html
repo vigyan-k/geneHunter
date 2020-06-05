@@ -13,11 +13,10 @@
     <header id="header">
         <div class="headerContainer wrapper">
             <div>
-                <h1>Promoter Hunter</h1>
+                <h1> ¬ Gene Hunter ¬ </h1>
             </div>
             <div class=iconContainer>
                 <i class=" icon fas fa-dna"></i>
-                <!-- <i class=" search fas fa-search"></i> -->
             </div>
         </div>
     </header>
@@ -28,9 +27,7 @@
                 <p>A gene a sequence of coding in your DNA. Which encodes a gene product. They consist of building blocks called nucleotides of A, C, G, and T. These are the Sequence of life and make up who you are!</p>
                 <button>Create your Gene!</button>
             </div>
-            <div class="mainBot">
-                <p>"ACGATCGAATCGATATTACGATG"</p>
-            </div>
+            <div class="mainBot" id="mainBot"></div>
         </div>
         
     </main>
@@ -41,17 +38,14 @@
                 <p>Your gene sequences naturally run anti-parallel to one another. For every nucleotide base in your DNA, it is attached to an opposite pair. The opposite pairs flow the other way. </p>
                 <button>Reverse your Gene!</button>
             </div>
-            <div class="asideBot">
-                <p>"ACGATCGAATCGATATTACGATG"</p>
-            </div>
+            <div class="asideBot" id="asideBot"></div>
         </div>
     </aside>
-    <footer>
         <div class="footerContainer wrapper">
             <div class="footerLeft">
                 <h2> - Motifs - </h2>
                 <p>Motifs are short recurring patterns in DNA which have biological functions. When DNA gets copied, there are specified sites machinery binds to. </p>
-                <p>Lets see if there are any in your personal Gene!</p>
+                <p>Lets see if there are any in <span class="nameOfGene">your personal Gene!</span></p>
             </div>
             <div class="footerRight">
                 <h3> 1. "TATA" Boxes</h3>
@@ -60,11 +54,12 @@
                 <button>Search for the Motifs in your Sequence</button>
             </div>
         </div>
-        <div class="motifsFound wrapper">
-            <p>In your Gene, the motifs were found at: [24, 67, 80]</p>
+        <div class="motifsFound wrapper" id="motifsFound"></div>
+        <div class="reset">
+            <a href="index.html#header"><button><i class=" redo fas fa-redo-alt"></i> Try Another Gene</button></a>
         </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
-    <script src="./javascript/script.js"></script>
+    <script src='./scripts/script.js'></script>
 </body>
 </html>

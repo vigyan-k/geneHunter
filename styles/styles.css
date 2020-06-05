@@ -312,6 +312,25 @@ button:focus {
   transition: ease 500ms;
 }
 
+.boxes {
+  background-color: #161B33;
+  padding: 50px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.boxes h3 {
+  margin: 0 0 25px 0;
+}
+
+.boxes p {
+  line-height: 40px;
+}
+
+.boxes button {
+  margin-top: 15px;
+}
+
 .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,27 +374,8 @@ button:focus {
   margin-top: 3%;
 }
 
-.mainTop {
-  background-color: #161B33;
-  padding: 50px;
-  border-radius: 50px;
-  margin-bottom: 20px;
-}
-
-.mainTop h3 {
-  margin: 0 0 25px 0;
-}
-
-.mainTop p {
-  line-height: 40px;
-}
-
-.mainTop button {
-  margin-top: 15px;
-}
-
 .mainBot {
-  background-color: #FCA311;
+  background-color: #FAC311;
   border-radius: 50px 15px;
   text-align: center;
 }
@@ -391,30 +391,10 @@ button:focus {
   margin-top: 3%;
 }
 
-.asideTop {
-  background-color: #161B33;
-  padding: 50px;
-  border-radius: 50px;
-  margin-bottom: 20px;
-}
-
-.asideTop h3 {
-  margin: 0 0 25px 0;
-}
-
-.asideTop p {
-  line-height: 40px;
-}
-
-.asideTop button {
-  margin-top: 15px;
-}
-
 .asideBot {
-  background-color: #FCA311;
+  background-color: #FAC311;
   border-radius: 50px 15px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .footerContainer {
@@ -454,7 +434,7 @@ button:focus {
 
 footer > div:nth-child(2) {
   text-align: center;
-  background-color: #FCA311;
+  background-color: #FAC311;
   border-radius: 50px 15px;
 }
 

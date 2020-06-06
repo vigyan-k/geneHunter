@@ -42,14 +42,14 @@ const reverseSeq = (randomizedGene) =>{
 
 $('.mainTop button').on('click', function(){
     $('.mainBot').empty()
-    const random = generateSequence (40);
+    const random = generateSequence (200);
     const name = prompt('What do you want to name your gene?');
     if(name){
         $('.mainBot').append(`<p>${name} is:</p>`);
-        $('.mainBot').append(`<p>'${random}' </p>`);
-        $('.mainBot').css('padding', '20px');
+        $('.mainBot').append(`<p>' ${random} ' </p>`);
+        $('.mainBot').css('padding', '15px');
+        $('.mainBot').css('width', '35%');
         $('.nameOfGene').html(`<p> ${name} </p>`);
-        $('.nameOfGene').css('color', 'gold');
         $('html, body').animate({
             scrollTop: $('#mainBot').offset().top
         }, 1000);
@@ -57,8 +57,10 @@ $('.mainTop button').on('click', function(){
         $('.asideTop button').on('click', function(){
             $('.asideBot').empty()
             const rseq = reverseSeq(random);
-            $('.asideBot').html(`<p>Your reverse sequence is: '${rseq}'</p>`);
+            $('.asideBot').append(`<p>Your reverse sequence is: </p>`);
+            $('.asideBot').append(`<p> ' ${rseq} '</p>`)
             $('.asideBot').css('padding', '20px');
+
             $('html, body').animate({
                 scrollTop: $('#asideBot').offset().top
             }, 1000);
@@ -71,14 +73,14 @@ $('.mainTop button').on('click', function(){
                 const searchMotif1R = findSubstrings(rseq, motifs.motif1);
                 const searchMotif2R = findSubstrings(rseq, motifs.motif2);
                 const searchMotif3R = findSubstrings(rseq, motifs.motif3);
-                $('.motifsFound').append(`<p>In ${name}:`)
-                $('.motifsFound').append(`<p> TATA was found at [${searchMotif1}]</p>`);
-                $('.motifsFound').append(`<p> CGCG was found at [${searchMotif2}]</p>`);
-                $('.motifsFound').append(`<p> TAACGCG was found at [${searchMotif3}]</p>`);
+                $('.motifsFound').append(`<p>In ${name}:</p>`)
+                $('.motifsFound').append(`<p> 'TATA' was found at [${searchMotif1}]</p>`);
+                $('.motifsFound').append(`<p> 'CGCG' was found at [${searchMotif2}]</p>`);
+                $('.motifsFound').append(`<p> 'TAACGCG' was found at [${searchMotif3}]</p>`);
                 $('.motifsFound').append(`<p>In ${name} reversed:`)
-                $('.motifsFound').append(`<p> TATA was found at [${searchMotif1R}]</p>`);
-                $('.motifsFound').append(`<p> CGCG was found at [${searchMotif2R}]</p>`);
-                $('.motifsFound').append(`<p> TAACGCG was found at [${searchMotif3R}]</p>`);
+                $('.motifsFound').append(`<p> 'TATA' was found at [${searchMotif1R}]</p>`);
+                $('.motifsFound').append(`<p> 'CGCG' was found at [${searchMotif2R}]</p>`);
+                $('.motifsFound').append(`<p> 'TAACGCG' was found at [${searchMotif3R}]</p>`);
                 $('.motifsFound').css('padding', '20px');
                 $('html, body').animate({
                     scrollTop: $('#motifsFound').offset().top

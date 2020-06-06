@@ -1,11 +1,28 @@
 .mainContainer{
     display:flex;
-    flex-direction: column;
+    // flex-direction: column;
     margin-top:3%;
+}
+
+.mainContainer>div:first-child{
+    width:65%;
+    img{
+        height: 250px;
+        width: 150px;
+    }
+}
+
+.mainTop>div{
+    display:flex;
+    justify-content: space-between;
 }
 
 .mainBot{
     background-color:#FAC311;
     border-radius: 50px 15px;
     text-align: center;
+    p{
+        font-size:1.5rem;
+    }
 }
+

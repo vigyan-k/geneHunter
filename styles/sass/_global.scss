@@ -55,20 +55,20 @@ button{
     color:white;
     padding: 15px 15px;
     border-radius:20px;
-    background-color: slateblue;
+    background-color: skyblue;
     font-size:1.5rem;
     transition: ease 400ms;
 }
 
 button:hover,
 button:focus{
-    border: 2px solid slateblue;
-    background-color:#FBFAF9;
-    color: #FCA311;
+    border: 2px solid #fff;
+    background-color:#FAC311;
+    color: #000;
 }
 
 button:focus{
-    border: 2px dashed slateblue;
+    border: 2px dashed skyblue;
 }
 
 .reset i{
@@ -85,13 +85,15 @@ button:focus{
 .motifsFound{
     line-height: 40px;
     transition: ease 500ms;
+    word-break: break-all; 
+    word-wrap: break-word;
 }
 
 .boxes{
     background-color: #161B33;
     padding:50px;
     border-radius: 50px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     h3{
         margin:0 0 25px 0;
     }

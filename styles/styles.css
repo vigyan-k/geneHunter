@@ -277,7 +277,7 @@ button {
   color: white;
   padding: 15px 15px;
   border-radius: 20px;
-  background-color: slateblue;
+  background-color: skyblue;
   font-size: 1.5rem;
   -webkit-transition: ease 400ms;
   transition: ease 400ms;
@@ -285,13 +285,13 @@ button {
 
 button:hover,
 button:focus {
-  border: 2px solid slateblue;
-  background-color: #FBFAF9;
-  color: #FCA311;
+  border: 2px solid #fff;
+  background-color: #FAC311;
+  color: #000;
 }
 
 button:focus {
-  border: 2px dashed slateblue;
+  border: 2px dashed skyblue;
 }
 
 .reset i {
@@ -310,13 +310,14 @@ button:focus {
   line-height: 40px;
   -webkit-transition: ease 500ms;
   transition: ease 500ms;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .boxes {
   background-color: #161B33;
   padding: 50px;
   border-radius: 50px;
-  margin-bottom: 20px;
 }
 
 .boxes h3 {
@@ -329,6 +330,11 @@ button:focus {
 
 .boxes button {
   margin-top: 15px;
+}
+
+header {
+  background-image: url("../assets/headerImage.jpg");
+  background-size: cover;
 }
 
 .headerContainer {
@@ -367,17 +373,35 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin-top: 3%;
+}
+
+.mainContainer > div:first-child {
+  width: 65%;
+}
+
+.mainContainer > div:first-child img {
+  height: 250px;
+  width: 150px;
+}
+
+.mainTop > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mainBot {
   background-color: #FAC311;
   border-radius: 50px 15px;
   text-align: center;
+}
+
+.mainBot p {
+  font-size: 1.5rem;
 }
 
 .asideContainer {
@@ -388,13 +412,14 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 3%;
+  margin-top: 20px;
 }
 
 .asideBot {
   background-color: #FAC311;
   border-radius: 50px 15px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footerContainer {
@@ -411,7 +436,7 @@ button:focus {
   background-color: #161B33;
   padding: 50px;
   border-radius: 50px;
-  margin: 10px 10px;
+  margin: 20px 10px;
   width: 50%;
 }
 
@@ -433,13 +458,12 @@ button:focus {
 }
 
 footer > div:nth-child(2) {
-  text-align: center;
   background-color: #FAC311;
   border-radius: 50px 15px;
 }
 
 .motifsFound {
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 footer > div:nth-child(3) {

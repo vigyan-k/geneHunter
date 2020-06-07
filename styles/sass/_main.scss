@@ -1,10 +1,10 @@
 .mainContainer{
     display:flex;
-    // flex-direction: column;
     margin-top:3%;
 }
 
 .mainContainer>div:first-child{
+    min-width: 65%;
     width:65%;
     img{
         height: 250px;
@@ -15,12 +15,22 @@
 .mainTop>div{
     display:flex;
     justify-content: space-between;
+    padding:20px;
+}
+
+.mainTop button{
+    margin-left:20px;
+}
+
+.mainTop div img:nth-child(3){
+    display:none;
 }
 
 .mainBot{
-    background-color:#FAC311;
+    background-color:$accent;
     border-radius: 50px 15px;
     text-align: center;
+    margin-left:10px;
     p{
         font-size:1.5rem;
     }

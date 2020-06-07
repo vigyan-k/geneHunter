@@ -23,11 +23,11 @@ let sequenceTwo = 'AACGTACTATAACGAGGACTACGATACGCGCGCTAGCGGATATAAACGACTG'
 
 const motifs = {}
 
-    motifs.motif1 =  'TATA';
+    motifs.motif1 = 'TATA';
     motifs.motif2 = 'CGCG';
     motifs.motif3 = 'TAACGCG';
 
-// Find a substring in a given sequence and output its index for each occurence
+// Find a substring in a given sequence and output its index for each occurence using arrays
 const findSubstrings = (string, subString)=>{
     const posArray = [];
     for(let pos = string.indexOf(subString); pos !== -1; pos = string.indexOf(subString, pos+1)){
@@ -45,10 +45,10 @@ $('.mainTop button').on('click', function(){
     const random = generateSequence (200);
     const name = prompt('What do you want to name your gene?');
     if(name){
-        $('.mainBot').append(`<p>${name} is:</p>`);
+        $('.mainBot').append(`<p>The Sequence of ${name} is:</p>`);
         $('.mainBot').append(`<p>' ${random} ' </p>`);
         $('.mainBot').css('padding', '15px');
-        $('.mainBot').css('width', '35%');
+        // $('.mainBot').css('width', '35%');
         $('.nameOfGene').html(`<p> ${name} </p>`);
         $('html, body').animate({
             scrollTop: $('#mainBot').offset().top
@@ -60,7 +60,6 @@ $('.mainTop button').on('click', function(){
             $('.asideBot').append(`<p>Your reverse sequence is: </p>`);
             $('.asideBot').append(`<p> ' ${rseq} '</p>`)
             $('.asideBot').css('padding', '20px');
-
             $('html, body').animate({
                 scrollTop: $('#asideBot').offset().top
             }, 1000);

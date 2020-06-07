@@ -1,0 +1,140 @@
+@media(max-width:900px){
+    .footerLeft{
+        h2{
+            font-size: 2.8rem;
+        }
+    }
+}
+
+@media(max-width: 850px){
+    .mainContainer{
+        flex-direction: column;
+        &:first-child div{
+            width:100%;
+            margin-bottom:20px;
+        }
+        .mainBot{
+            width: 100%;
+            margin:0;
+        }
+    }
+
+    .mainTop>div{
+        flex-direction: column;
+        display:flex;
+    }
+
+    .mainTop div img:nth-child(2){
+        display:none;
+    }
+
+    .mainTop div img:nth-child(3){
+        display:block;
+        width:90%;
+    }
+
+    .footerLeft{
+        h2{
+            font-size: 2.8rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    
+    .footerRight{
+        h3{
+            font-size:2.3rem;
+        }
+    }
+}
+
+@media(max-width:805px){
+    .footerContainer{
+        flex-direction: column;
+        margin-top:20px;
+    }
+
+    .footerLeft,
+    .footerRight{
+        width:100%;
+        margin:0 0 20px 0;
+    }
+}
+
+@media(max-width: 675px){
+    .asideLeft{
+        h2{
+            font-size:1.8rem;
+        }
+    }
+}
+
+@media(max-width: 520px){
+    body{
+        text-align: center;
+    }
+
+    img{
+        margin:0 auto;
+    }
+
+    header{
+        height: 40vh;
+        border-bottom:solid 10px $accentTwo;
+        margin-bottom:10%;
+    }
+
+    h1,
+    .icon{
+        font-size: 4rem;
+        margin: 0 auto;
+    }
+
+    .headerContainer{
+        display:flex;
+        flex-direction: column;
+        border:none;
+    }
+
+    h2{
+        font-size:1.8rem;
+    }
+
+    p{
+        font-size:1.5rem;
+    }
+
+    .mainTop{
+        padding:10px;
+        button{
+            margin: 0 0 20px 0;
+        }
+    }
+
+    button{
+        padding:7px;
+    }
+
+    .reset{
+        margin-bottom:20%;
+        height:10vh;
+    }
+}
+
+@media(max-width: 360px){
+    h2,
+    .footerLeft h2{
+        font-size:1.3rem;
+    }
+
+
+
+    .footerRight h3{
+        font-size:1.7rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}

@@ -6,7 +6,7 @@ header{
 .headerContainer{
     display:flex;
     justify-content: space-between;
-    border-bottom: solid 5px slateblue;
+    border-bottom: solid 5px $accentTwo;
     div{
         margin:5% 0;
     }

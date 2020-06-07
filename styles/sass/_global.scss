@@ -1,8 +1,10 @@
+@import'variables';
+
 html {
     font-family: "open sans", "lato", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0D0C1D;
+    background-color: $base;
 }
 
 .wrapper {
@@ -46,8 +48,7 @@ p{
 
 .icon{
     font-size: 8rem;
-    color: #FAC311;
-    
+    color: $accent;
 }
 
 button{
@@ -55,7 +56,7 @@ button{
     color:white;
     padding: 15px 15px;
     border-radius:20px;
-    background-color: skyblue;
+    background-color: $accentTwo;
     font-size:1.5rem;
     transition: ease 400ms;
 }
@@ -63,12 +64,12 @@ button{
 button:hover,
 button:focus{
     border: 2px solid #fff;
-    background-color:#FAC311;
+    background-color:$accent;
     color: #000;
 }
 
 button:focus{
-    border: 2px dashed skyblue;
+    border: 2px dashed $accentTwo;
 }
 
 .reset i{
@@ -90,7 +91,7 @@ button:focus{
 }
 
 .boxes{
-    background-color: #161B33;
+    background-color: $primary;
     padding:50px;
     border-radius: 50px;
     // margin-bottom: 20px;
@@ -103,4 +104,9 @@ button:focus{
     button{
        margin-top:15px;
     }
+}
+
+img{
+    border-radius:20px;
+    box-shadow:5px 5px $accentTwo;
 }

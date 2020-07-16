@@ -406,6 +406,10 @@ header {
   margin-left: 20px;
 }
 
+.mainTop div img:nth-child(2) {
+  margin-left: 20px;
+}
+
 .mainTop div img:nth-child(3) {
   display: none;
 }
